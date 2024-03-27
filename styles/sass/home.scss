@@ -1,0 +1,53 @@
+.pf__header {
+    &__content {
+        position: relative;
+        width: 80;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    &__logo {
+        font-family: "lora", "Times New Roman";
+        font-size: 120px;
+        @media (max-width: 1024) {
+            font-size: 80px;
+        }
+        @media (max-width: 700px) {
+            font-size: 60px;
+        }
+    }
+    &__options-contrast {
+        font-family: 'lora', "Times New Roman";
+        font-size: 20px;
+        position: fixed;
+        right: 40px;
+        top: 105px;
+        margin-top: 0px;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -ms-transform-origin: right, top;
+        -webkit-transform-origin: right, top;
+        z-index: 3;
+        @media (max-width: 700px) { 
+            right: 10px;
+            font-size: 18px;
+        }
+        span {
+            cursor: pointer;
+        }
+        .active {
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            &:hover {
+                border-color: transparent;
+            }
+        }
+             
+    }
+}
+.pf__bio {
+    position: relative;
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 400px;
+}
